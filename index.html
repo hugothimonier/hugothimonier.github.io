@@ -223,24 +223,23 @@
                             </button>
                             <div id="abstract3" class="collapse">
                                 <p style="text-align: justify;">
-                                    Anomaly detection is crucial in various domains, such as 
-                                    finance, healthcare, and cybersecurity. In this paper, we 
-                                    propose a novel deep anomaly detection method for tabular 
-                                    data that leverages Non-Parametric Transformers (NPTs), 
-                                    a model initially proposed for supervised tasks, 
+                                    Anomaly detection is vital in many domains, such as finance, healthcare, 
+                                    and cybersecurity. In this paper, we propose a novel deep anomaly 
+                                    detection method for tabular data that leverages Non-Parametric 
+                                    Transformers (NPTs), a model initially proposed for supervised tasks, 
                                     to capture both feature-feature and sample-sample dependencies. 
-                                    In a reconstruction-based framework, we train the NPT model 
-                                    to reconstruct masked features of normal samples. 
-                                    We use the model's ability to reconstruct the masked 
-                                    features during inference to generate an anomaly score. 
-                                    To the best of our knowledge, our proposed method is the 
-                                    first to combine both feature-feature and sample-sample 
-                                    dependencies for anomaly detection on tabular datasets. 
-                                    We evaluate our method on an extensive benchmark of tabular datasets 
-                                    and demonstrate that our approach outperforms existing 
-                                    state-of-the-art methods based on both the F1-Score and AUROC. 
-                                    Moreover, our work opens up new research directions for exploring 
-                                    the potential of NPTs for other tasks on tabular data. 
+                                    In a reconstruction-based framework, we train the NPT to r
+                                    econstruct masked features of normal samples. In a non-parametric fashion, 
+                                    we leverage the whole training set during inference and use 
+                                    the model's ability to reconstruct the masked features to generate 
+                                    an anomaly score. To the best of our knowledge, this is the first work 
+                                    to successfully combine feature-feature and sample-sample dependencies for 
+                                    anomaly detection on tabular datasets. Through extensive experiments on 
+                                    31 benchmark tabular datasets, we demonstrate that our method achieves 
+                                    state-of-the-art performance, outperforming existing methods by 2.4% and 1.2%
+                                    in terms of F1-score and AUROC, respectively. Our ablation study provides 
+                                    evidence that modeling both types of dependencies is crucial for 
+                                    anomaly detection on tabular data.
                                 </p>
                             </div>
                             <a href="https://github.com/hugothimonier/NPT-AD"
