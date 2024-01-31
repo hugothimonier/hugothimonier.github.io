@@ -72,7 +72,7 @@
                 I am a third-year PhD student in computer science at <a href="https://www.lisn.upsaclay.fr/" target="_blank">LISN</a>, 
                 member of the research chair 
                 <a href="https://www.lusis.fr/services/intelligence-artificielle/" target="_blank">LUSIS</a>. 
-                My current research is focused on anomaly detection and deep learning for tabular data. 
+                My current research is focused on (supervised) anomaly detection and deep learning for tabular data. 
                 I am working under the supervision of <a href="https://fabrice.popineau.net/" target="_blank">Fabrice Popineau</a>, 
                 <a href="https://www.lri.fr/membre.php?mb=391" target="_blank"> Arpad Rimmel</a> and <a href="https://www.lri.fr/membre.php?mb=2059" target="_blank">Bich-Lien Doan</a>. 
                 I have received an MSc degree in Statiscial Engineering from <a href="https://www.ensae.fr/" target="_blank">ENSAE</a>  and studied 
@@ -90,6 +90,18 @@
         </div>
     </div>
     <!-- End news header -->
+
+    <!-- Preprint Making Param -->
+
+    <div class="row">
+        <div class="col-sm-1 col-md-1">
+            <span class="label label-2021">01 / 2024</span>
+        </div>
+        <div class="col-sm-11 col-md-11">
+            My preprint "Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again" 
+            has been uploaded on <a href="https://arxiv.org/abs/2401.17052" target="_blank">ArXiv</a>!
+        </div>
+    </div>
 
     <!-- Preprint NPT-AD -->
 
@@ -187,12 +199,68 @@
     <!-- end of news -->
     <hr>
 
+
+
     <!-- Research -->
     <div class="row" id="research" style="padding-top:60px; margin-top:-60px;">
         <div class="col-md-12">
             <h2>Research</h2>
 
-                    <!-- IJCNN 2022 -->
+             <!-- ArXiv 2024 -->
+             <div class="row">
+                <div class="col-xs-10 col-sm-4 col-md-4">
+                    <a class="thumbnail">
+                        <img src="./content/media/miniature_making_param.png"
+                             alt="Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    <strong>Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again</strong> </br>
+                    <u>Hugo Thimonier</u>, Fabrice Popineau, Arpad Rimmel and Bich-Liên Doan<br>
+                    <em>ArXiv, 2024</em>.<br>
+                    <a href="https://arxiv.org/abs/2401.17052" target="_blank"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex4">
+                        bibtex
+                    </button>
+                    <div id="bibtex4" class="collapse">
+                        <pre><tt>@misc{thimonier2024making,
+    title={Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again}, 
+    author={Hugo Thimonier and Fabrice Popineau and Arpad Rimmel and Bich-Liên Doan},
+    year={2024},
+    eprint={2401.17052},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG}
+    }
+                        </tt></pre>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse"
+                            data-target="#abstract4">abstract
+                    </button>
+                    <div id="abstract4" class="collapse">
+                        <p style="text-align: justify;">
+                            Deep learning for tabular data has garnered increasing attention in recent years, 
+                            yet employing deep models for structured data remains challenging. 
+                            While these models excel with unstructured data, their efficacy with structured 
+                            data has been limited. Recent research has introduced retrieval-augmented models 
+                            to address this gap, demonstrating promising results in supervised tasks such as 
+                            classification and regression. In this work, we investigate using 
+                            retrieval-augmented models for anomaly detection on tabular data. 
+                            We propose a reconstruction-based approach in which a transformer model 
+                            learns to reconstruct masked features of <i>normal</i> samples. 
+                            We test the effectiveness of KNN-based and attention-based modules to select 
+                            relevant samples to help in the reconstruction process of the target sample. 
+                            Our experiments on a benchmark of 31 tabular datasets reveal that augmenting 
+                            this reconstruction-based anomaly detection (AD) method with non-parametric 
+                            relationships via retrieval modules may significantly boost performance.
+                        </p>
+                    </div>
+                    <a href="https://github.com/hugothimonier/Making-Parametric-Anomaly-Detection-on-Tabular-Data-Non-Parametric-Again" target="_blank"
+                    ><button type="button" class="btn btn-primary btn-xs">project page</button></a>
+                </div>
+            </div>
+            <!-- end of ArXiv 2024 -->
+
+                    <!-- NeurIPS 2023 -->
                     <div class="row">
                         <div class="col-xs-10 col-sm-4 col-md-4">
                             <a class="thumbnail">
@@ -209,14 +277,14 @@
                                 bibtex
                             </button>
                             <div id="bibtex3" class="collapse">
-              <pre><tt>@inproceedings{thimonier2023beyond,
-                title={Beyond Individual Input for Deep Anomaly Detection on Tabular Data},
-                author={Hugo Thimonier and Fabrice Popineau and Arpad Rimmel and Bich-Li{\^e}n DOAN},
-                booktitle={NeurIPS 2023 Second Table Representation Learning Workshop},
-                year={2023},
-                url={https://openreview.net/forum?id=lsn7ehxAdt}
-                }
-              </tt></pre>
+                                <pre><tt>@inproceedings{thimonier2023beyond,
+    title={Beyond Individual Input for Deep Anomaly Detection on Tabular Data},
+    author={Hugo Thimonier and Fabrice Popineau and Arpad Rimmel and Bich-Li{\^e}n DOAN},
+    booktitle={NeurIPS 2023 Second Table Representation Learning Workshop},
+    year={2023},
+    url={https://openreview.net/forum?id=lsn7ehxAdt}
+    }
+                                </tt></pre>
                             </div>
                             <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse"
                                     data-target="#abstract3">abstract
@@ -242,11 +310,11 @@
                                     anomaly detection on tabular data.
                                 </p>
                             </div>
-                            <a href="https://github.com/hugothimonier/NPT-AD"
+                            <a href="https://github.com/hugothimonier/NPT-AD" target="_blank"
                             ><button type="button" class="btn btn-primary btn-xs">project page</button></a>
                         </div>
                     </div>
-                    <!-- end of arXiv'21 -->
+                    <!-- end of NeurIPS 2023 -->
 
 
             <!-- IJCNN 2022 -->
@@ -266,16 +334,16 @@
                         bibtex
                     </button>
                     <div id="bibtex2" class="collapse">
-	  <pre><tt>@inproceedings{thimonier2022,
-        author={Thimonier, Hugo and Popineau, Fabrice and Rimmel, Arpad and Doan, Bich-Liên and Daniel, Fabrice},
-        booktitle={2022 International Joint Conference on Neural Networks (IJCNN)},
-        title={{TracInAD}: Measuring Influence for Anomaly Detection}, 
-        year={2022},
-        volume={},
-        number={},
-        pages={1-6},
-        doi={10.1109/IJCNN55064.2022.9892058}}
-      </tt></pre>
+                    <pre><tt>@inproceedings{thimonier2022,
+    author={Thimonier, Hugo and Popineau, Fabrice and Rimmel, Arpad and Doan, Bich-Liên and Daniel, Fabrice},
+    booktitle={2022 International Joint Conference on Neural Networks (IJCNN)},
+    title={{TracInAD}: Measuring Influence for Anomaly Detection}, 
+    year={2022},
+    volume={},
+    number={},
+    pages={1-6},
+    doi={10.1109/IJCNN55064.2022.9892058}}
+                    </tt></pre>
                     </div>
                     <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse"
                             data-target="#abstract2">abstract
@@ -321,16 +389,17 @@
                         bibtex
                     </button>
                     <div id="bibtex1" class="collapse">
-	  <pre><tt>@inproceedings{thimonier2021,
-        author={Thimonier, Hugo and Despois, Julien and Kips, Robin and Perrot, Matthieu},
-        booktitle={2021 IEEE International Conference on Multimedia and Expo (ICME)}, 
-        title={Learning Long Term Style Preserving Blind Video Temporal Consistency}, 
-        year={2021},
-        volume={},
-        number={},
-        pages={1-6},
-        doi={10.1109/ICME51207.2021.9428445}}
-      </tt></pre>
+                    <pre><tt>@inproceedings{thimonier2021,
+    author={Thimonier, Hugo and Despois, Julien and Kips, Robin and Perrot, Matthieu},
+    booktitle={2021 IEEE International Conference on Multimedia and Expo (ICME)}, 
+    title={Learning Long Term Style Preserving Blind Video Temporal Consistency}, 
+    year={2021},
+    volume={},
+    number={},
+    pages={1-6},
+    doi={10.1109/ICME51207.2021.9428445}
+    }
+                    </tt></pre>
                     </div>
                     <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse"
                             data-target="#abstract1">abstract
