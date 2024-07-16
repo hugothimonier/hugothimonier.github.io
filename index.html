@@ -91,6 +91,17 @@
     </div>
     <!-- End news header -->
 
+    <!-- RA-AD CIKM 2024-->
+
+    <div class="row">
+        <div class="col-sm-1 col-md-1">
+            <span class="label label-2021">07 / 2024</span>
+        </div>
+        <div class="col-sm-11 col-md-11">
+            My paper "Retrieval Augmented Deep Anomaly Detection for Tabular Data" 
+            has been accepted at <a href="https://cikm2024.org/" target="_blank">CIKM 2024</a>. See you in Boise (USA)!
+        </div>
+    </div>
 
     <!-- NPT-AD ICML 2024-->
 
@@ -101,18 +112,6 @@
         <div class="col-sm-11 col-md-11">
             My paper "Beyond Individual Input for Anomaly Detection on Tabular Data" 
             has been accepted at <a href="https://icml.cc/" target="_blank">ICML 2024</a>. See you in Vienna!
-        </div>
-    </div>
-
-    <!-- Preprint Making Param -->
-
-    <div class="row">
-        <div class="col-sm-1 col-md-1">
-            <span class="label label-2021">01 / 2024</span>
-        </div>
-        <div class="col-sm-11 col-md-11">
-            My preprint "Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again" 
-            has been uploaded on <a href="https://arxiv.org/abs/2401.17052" target="_blank">ArXiv</a>!
         </div>
     </div>
 
@@ -228,21 +227,22 @@
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8">
-                    <strong>Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again</strong> </br>
+                    <strong>Retrieval Augmented Deep Anomaly Detection for Tabular Data</strong> </br>
                     <u>Hugo Thimonier</u>, Fabrice Popineau, Arpad Rimmel and Bich-Liên Doan<br>
-                    <em>ArXiv, 2024</em>.<br>
+                    <em>33rd ACM International Conference on Information and Knowledge Management (CIKM '24)</em>.<br>
                     <a href="https://arxiv.org/abs/2401.17052" target="_blank"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
                     <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex4">
                         bibtex
                     </button>
                     <div id="bibtex4" class="collapse">
-                        <pre><tt>@misc{thimonier2024making,
-    title={Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again}, 
-    author={Hugo Thimonier and Fabrice Popineau and Arpad Rimmel and Bich-Liên Doan},
-    year={2024},
-    eprint={2401.17052},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
+                        <pre><tt>@inproceedings{thimonier2024making,
+    author = {Thimonier, Hugo and Popineau, Fabrice and Rimmel, Arpad and Doan, Bich-Li{\^e}n},
+    title = {Retrieval Augmented Deep Anomaly Detection for Tabular Data},
+    year = {2024},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    booktitle = {Proceedings of the 33rd ACM International Conference on Information and Knowledge Management (CIKM '24), Boise, ID, USA},
+    keywords = {Anomaly Detection, Tabular Data, Deep Learning},
     }
                         </tt></pre>
                     </div>
@@ -251,20 +251,21 @@
                     </button>
                     <div id="abstract4" class="collapse">
                         <p style="text-align: justify;">
-                            Deep learning for tabular data has garnered increasing attention in recent years, 
-                            yet employing deep models for structured data remains challenging. 
-                            While these models excel with unstructured data, their efficacy with structured 
-                            data has been limited. Recent research has introduced retrieval-augmented models 
-                            to address this gap, demonstrating promising results in supervised tasks such as 
-                            classification and regression. In this work, we investigate using 
-                            retrieval-augmented models for anomaly detection on tabular data. 
-                            We propose a reconstruction-based approach in which a transformer model 
-                            learns to reconstruct masked features of <i>normal</i> samples. 
-                            We test the effectiveness of KNN-based and attention-based modules to select 
-                            relevant samples to help in the reconstruction process of the target sample. 
-                            Our experiments on a benchmark of 31 tabular datasets reveal that augmenting 
-                            this reconstruction-based anomaly detection (AD) method with non-parametric 
-                            relationships via retrieval modules may significantly boost performance.
+                            Deep learning for tabular data has garnered increasing attention in recent years,
+                            yet employing deep models for structured data remains challenging. While these
+                            models excel with unstructured data, their efficacy with structured data has 
+                            been limited. Recent research has introduced retrieval-augmented models to 
+                            address this gap, demonstrating promising results in supervised tasks such as
+                            classification and regression. In this work, we investigate using retrieval-augmented
+                            models for anomaly detection on tabular data. We propose a reconstruction-based 
+                            approach in which a transformer model learns to reconstruct masked features 
+                            of normal samples. We test the effectiveness of KNN-based and attention-based
+                            modules to select relevant samples to help in the reconstruction process of the 
+                            target sample. Our experiments on a benchmark of 31 tabular datasets reveal that 
+                            augmenting this reconstruction-based anomaly detection (AD) method with sample-sample 
+                            dependencies via retrieval modules significantly boosts performance. The present 
+                            work supports the idea that retrieval module are useful to augment any deep 
+                            AD method to enhance anomaly detection on tabular data.
                         </p>
                     </div>
                     <a href="https://github.com/hugothimonier/Making-Parametric-Anomaly-Detection-on-Tabular-Data-Non-Parametric-Again" target="_blank"
