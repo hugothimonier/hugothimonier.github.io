@@ -54,8 +54,8 @@
         </div>
 
         <div class="col-md-9">
-            <h1 class="text-info">Hugo Thimonier</h1>
-            <h4 class="text-info">PhD, LISN</h4>
+            <h1 class="text-info">Hugo Thimonier, PhD</h1>
+            <h4 class="text-info">Research Scientist, Emobot</h4>
             <h5>
                 <a href="mailto:hugo.thimonier@centralesupelec.fr" class="text-info" title="e-Mail"><i
                         class="fa fa-envelope-square fa-2x"></i></a>
@@ -88,7 +88,20 @@
     </div>
     <!-- End news header -->
 
-    <!-- RA-AD CIKM 2024-->
+    <!-- T-JEPA 2024-->
+
+    <div class="row">
+        <div class="col-sm-1 col-md-1">
+            <span class="label label-2021">09 / 2024</span>
+        </div>
+        <div class="col-sm-11 col-md-11">
+            Our latest work, "T-JEPA: Augmentation Free Self-Supervised Learning for Tabular Data" has been uploaded on 
+            <a href="https://arxiv.org/abs/2410.05016" target="_blank">ArXiv</a>.
+            Check it out !
+        </div>
+    </div>
+
+    <!-- PhD 2024-->
 
     <div class="row">
         <div class="col-sm-1 col-md-1">
@@ -221,11 +234,74 @@
     <hr>
 
 
-
     <!-- Research -->
     <div class="row" id="research" style="padding-top:60px; margin-top:-60px;">
         <div class="col-md-12">
             <h2>Research</h2>
+
+             <!-- CIKM 2024 -->
+             <div class="row">
+                <div class="col-xs-10 col-sm-4 col-md-4">
+                    <a class="thumbnail">
+                        <img src="./content/media/t_jepa.png"
+                             alt="Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    <strong>T-JEPA: Augmentation-Free Self-Supervised Learning for Tabular Data</strong> </br>
+                    <u>Hugo Thimonier</u>, José Lucas De Melo Costa, Fabrice Popineau, Arpad Rimmel and Bich-Liên Doan<br>
+                    <em>Preprint. Under Review.</em>.<br>
+                    <a href="https://arxiv.org/abs/2410.05016" target="_blank"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex4">
+                        bibtex
+                    </button>
+                    <div id="bibtex4" class="collapse">
+                        <pre><tt>@misc{thimonier2024tjepaaugmentationfreeselfsupervisedlearning,
+    title={T-JEPA: Augmentation-Free Self-Supervised Learning for Tabular Data}, 
+    author={Hugo Thimonier and José Lucas De Melo Costa and Fabrice Popineau and Arpad Rimmel and Bich-Liên Doan},
+    year={2024},
+    eprint={2410.05016},
+    archivePrefix={arXiv},
+    primaryClass={cs.LG},
+    url={https://arxiv.org/abs/2410.05016}, 
+    }
+                        </tt></pre>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse"
+                            data-target="#abstract4">abstract
+                    </button>
+                    <div id="abstract4" class="collapse">
+                        <p style="text-align: justify;">
+                            Self-supervision is often used for pre-training to foster performance 
+                            on a downstream task by constructing meaningful representations of samples.
+                            Self-supervised learning (SSL) generally involves generating different 
+                            views of the same sample and thus requires data augmentations that are 
+                            challenging to construct for tabular data. This constitutes one of 
+                            the main challenges of self-supervision for structured data. In the 
+                            present work, we propose a novel augmentation-free SSL method for 
+                            tabular data. Our approach, T-JEPA, relies on a Joint Embedding Predictive 
+                            Architecture (JEPA) and is akin to mask reconstruction in the latent space. 
+                            It involves predicting the latent representation of one subset of features 
+                            from the latent representation of a different subset within the same sample, 
+                            thereby learning rich representations without augmentations. We use our method 
+                            as a pre-training technique and train several deep classifiers on the obtained 
+                            representation. Our experimental results demonstrate a substantial improvement 
+                            in both classification and regression tasks, outperforming models trained 
+                            directly on samples in their original data space. Moreover, T-JEPA enables 
+                            some methods to consistently outperform or match the performance of 
+                            traditional methods likes Gradient Boosted Decision Trees. To understand why, 
+                            we extensively characterize the obtained representations and show that 
+                            T-JEPA effectively identifies relevant features for downstream tasks 
+                            without access to the labels. Additionally, we introduce regularization 
+                            tokens, a novel regularization method critical for training of 
+                            JEPA-based models on structured data. 
+                        </p>
+                    </div>
+                    <a href="https://github.com/jose-melo/t-jepa" target="_blank"
+                    ><button type="button" class="btn btn-primary btn-xs">project page</button></a>
+                </div>
+            </div>
+            <!-- end of TJEPA 2024 -->
 
              <!-- CIKM 2024 -->
              <div class="row">
