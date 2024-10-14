@@ -589,7 +589,8 @@
 
     <div class="container">
         <footer>
-            <p align="right"><small>Copyright © Hugo Thimonier &nbsp;/&nbsp; Last update: October 2024</small></p>
+            <p align="right"><small>Copyright © Hugo Thimonier &nbsp;/&nbsp; Last update: 
+                <span id="lastUpdate"></span></small></p>
         </footer>
         <div style="height:10px;"></div>
     </div>
@@ -603,7 +604,18 @@
     <!-- JavaScript for selecting the BibTeX and showing the message -->
     <script src="js/copy.min.js"></script>
 
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="js/scale.fix.js"></script>
+
+    <script>
+        // Get the last modified date of the document
+        const lastModified = new Date(document.lastModified);
+
+        // Create a date options object to format the date as Month YYYY
+        const options = { year: 'numeric', month: 'long' };
+
+        // Insert the formatted date into the span with ID 'lastUpdate'
+        document.getElementById('lastUpdate').textContent = lastModified.toLocaleDateString('en-US', options);
+    </script>
 
 
 </div>
