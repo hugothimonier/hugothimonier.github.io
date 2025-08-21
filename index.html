@@ -144,6 +144,19 @@
 
     <div class="row">
         <div class="col-sm-1 col-md-1">
+            <span class="label label-2021">08 / 2025</span>
+        </div>
+        <div class="col-sm-11 col-md-11">
+            Our latest work on LLM fine-tuning for SER, <a href="https://arxiv.org/abs/2508.14130" target="_blank">EmoSLLM: Parameter-Efficient Adaptation of LLMs for Speech Emotion Recognition</a> is
+            now on arXiv!
+        </div>
+    </div>
+
+
+    <!-- T-JEPA 2025-->
+
+    <div class="row">
+        <div class="col-sm-1 col-md-1">
             <span class="label label-2021">01 / 2025</span>
         </div>
         <div class="col-sm-11 col-md-11">
@@ -268,12 +281,76 @@
         <div class="col-md-12">
             <h2>Research</h2>
 
-             <!-- CIKM 2024 -->
+             <!-- EmoSLLM 2025 -->
+             <div class="row">
+                <div class="col-xs-10 col-sm-4 col-md-4">
+                    <a class="thumbnail">
+                        <img src="./content/media/emosllm_.png"
+                             alt="EmoSLLM: Parameter-Efficient Adaptation of LLMs for Speech Emotion Recognition">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8">
+                    <strong>EmoSLLM: Parameter-Efficient Adaptation of LLMs for Speech Emotion Recognition</strong> </br>
+                    <u>Hugo Thimonier</u>, Antony Perzo, Renaud Seguier<br>
+                    <em>arXiv, 2025.</em><br>
+                    <a href="https://arxiv.org/abs/2508.14130" target="_blank"><button type="button" class="btn btn-primary btn-xs">pdf</button></a>
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex5">
+                        bibtex
+                    </button>
+                    <div id="bibtex5" class="collapse">
+                        <!-- Hidden message that will appear when BibTeX is shown -->
+                        <div class="bibtex-message" style="display: none; color: grey; font-size: 12px;">
+                            Click anywhere on the box bellow to highlight complete record.
+                        </div>
+                        <pre class="bibtex-pre"><tt>@misc{thimonier2025emosllmparameterefficientadaptationllms,
+    title={EmoSLLM: Parameter-Efficient Adaptation of LLMs for Speech Emotion Recognition}, 
+    author={Hugo Thimonier and Antony Perzo and Renaud Seguier},
+    year={2025},
+    eprint={2508.14130},
+    archivePrefix={arXiv},
+    primaryClass={eess.AS},
+    url={https://arxiv.org/abs/2508.14130}, 
+    }</tt></pre>
+                    </div>
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="collapse"
+                            data-target="#abstract4">abstract
+                    </button>
+                    <div id="abstract4" class="collapse">
+                        <p style="text-align: justify;">
+                            Emotion recognition from speech is a challenging task that requires 
+                            capturing both linguistic and paralinguistic cues, with critical 
+                            applications in human-computer interaction and mental health monitoring. 
+                            Recent works have highlighted the ability of Large Language Models (LLMs) 
+                            to perform tasks outside of the sole natural language area. In particular, 
+                            recent approaches have investigated coupling LLMs with other data modalities 
+                            by using pre-trained backbones and different fusion mechanisms. This work 
+                            proposes a novel approach that fine-tunes an LLM with audio and text 
+                            representations for emotion prediction. Our method first extracts audio 
+                            features using an audio feature extractor, which are then mapped into 
+                            the LLM's representation space via a learnable interfacing module. 
+                            The LLM takes as input (1) the transformed audio features, 
+                            (2) additional features in the form of natural language (e.g., the transcript), 
+                            and (3) a textual prompt describing the emotion prediction task. 
+                            To efficiently adapt the LLM to this multimodal task, we employ 
+                            Low-Rank Adaptation (LoRA), enabling parameter-efficient fine-tuning. 
+                            Experimental results on standard emotion recognition benchmarks 
+                            demonstrate that our model outperforms all but one existing Speech-Text 
+                            LLMs in the literature, while requiring less than half the parameters 
+                            of competing approaches. This highlights our approach's effectiveness in 
+                            integrating multi-modal inputs for speech-based emotion understanding 
+                            while maintaining significant computational efficiency. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of EmoSLLM 2025 -->
+
+             <!-- ICLR 2025 -->
              <div class="row">
                 <div class="col-xs-10 col-sm-4 col-md-4">
                     <a class="thumbnail">
                         <img src="./content/media/t_jepa.png"
-                             alt="Making Parametric Anomaly Detection on Tabular Data Non-Parametric Again">
+                             alt="T-JEPA: Augmentation-Free Self-Supervised Learning for Tabular Data">
                     </a>
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8">
@@ -331,7 +408,7 @@
                     ><button type="button" class="btn btn-primary btn-xs">project page</button></a>
                 </div>
             </div>
-            <!-- end of TJEPA 2024 -->
+            <!-- end of TJEPA 2025 -->
 
              <!-- CIKM 2024 -->
              <div class="row">
