@@ -5265,36 +5265,47 @@ a.label:hover, a.label:focus {
     background-color: #808080
 }
 
-.label-2019 {
-    background-color: #999999
-}
-
-.label-2019[href]:hover, .label-2019[href]:focus {
-    background-color: #808080
-}
-
-.label-2019 {
-    background-color: #8ECAE6
-}
-
-.label-2019[href]:hover, .label-2019[href]:focus {
-    background-color: #808080
+label-2019 {
+    background-color: #ffd900; /* Lightest Blue */
+    color: #023047;
 }
 
 .label-2020 {
-    background-color: #219ebc
-}
-
-.label-2020[href]:hover, .label-2020[href]:focus {
-    background-color: #808080
+    background-color: #ffd900; /* Medium-Light Blue */
+    color: #ffffff;
 }
 
 .label-2021 {
-    background-color: #023047
+    background-color: #ffd900; /* Lighter, Brighter Blue - closer to 2021 */
+    color: #ffffff; /* Darker text for contrast */
 }
 
-.label-2021[href]:hover, .label-2021[href]:focus {
-    background-color: #808080
+.label-2022 {
+    background-color: #ffd900; /* Off-Black/Very Dark Gray */
+    color: #ffffff;
+}
+
+.label-2023 {
+    background-color: #ffd900; /* Off-Black/Very Dark Gray */
+    color: #ffffff;
+}
+
+/* Recent Years (Warm/Highlight Tones - Golds/Oranges) */
+.label-2024 {
+    background-color: #ffb703; /* Bright Yellow/Gold */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.label-2025 {
+    background-color: #fb8500; /* Bright Orange/Accent */
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.label-2026 {
+    background-color: #E66F00; /* Darker Orange */
+    color: #ffffff;
 }
 
 .label-primary {
@@ -7306,6 +7317,23 @@ button.close {
     }
 }
 
+@media (min-width: 768px) {
+    body {
+        /* Set body padding-top equal to the navbar's height + your desired margin */
+        padding-top: 100px; /* 60px (navbar height) + 40px (old spacing) */
+    }
+}
+
+/* Fix anchor links for fixed navbar - for modern browsers */
+:target {
+    scroll-margin-top: 100px; /* Should match the total height of your fixed navbar plus some margin */
+}
+
+/* Ensure the main content starts properly below the fixed navbar for smaller screens */
+#main-content {
+    padding-top: 20px; /* Additional padding for mobile/small screens if needed */
+}
+
 .navbar {
     font-size: 18px;
     font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
@@ -7399,3 +7427,25 @@ button.close {
     font-size: 1.2em;
 }
 
+.research-thumbnail-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* Ensures the image fits within the box without cropping */
+}
+
+.date-column {
+    /* Ensure the column is explicitly aligned right for uniformity, or center if preferred */
+    text-align: right;
+    padding-right: 5px; /* Adjust padding if needed to bring it closer to text */
+}
+
+.date-column .label {
+    /* Set a minimum width that comfortably fits the longest date string "MM / YYYY" */
+    min-width: 80px;
+    display: inline-block;
+    text-align: center;
+}
+
+:target {
+    scroll-margin-top: 100px; 
+}
