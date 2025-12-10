@@ -7317,6 +7317,10 @@ button.close {
     }
 }
 
+body {
+    padding-top: 60px; /* Default padding for mobile (uncollapsed navbar height is around 50-60px) */
+}
+
 @media (min-width: 768px) {
     body {
         /* Set body padding-top equal to the navbar's height + your desired margin */
